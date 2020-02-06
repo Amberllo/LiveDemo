@@ -1,13 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.MessageFragment">
+    tools:context=".business.fragment.MessageFragment">
 
-    <TextView
+
+    <Button
+        android:id="@+id/message_text"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Message" />
+        android:layout_height="100dp"
+        android:layout_margin="@dimen/dp_45"
+        android:gravity="center"
+        android:text="@string/title_message"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</FrameLayout>
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/message_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="@dimen/dp_10"
+        fresco:roundedCornerRadius="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/message_text" />
+
+
+    <ProgressBar
+        android:id="@+id/message_loading"
+        app:layout_constraintBottom_toBottomOf="@id/message_image"
+        app:layout_constraintTop_toTopOf="@id/message_image"
+        app:layout_constraintEnd_toEndOf="@id/message_image"
+        app:layout_constraintStart_toStartOf="@id/message_image"
+        android:visibility="gone"
+        android:layout_width="@dimen/dp_50"
+        android:layout_height="@dimen/dp_50" />
+
+</android.support.constraint.ConstraintLayout>

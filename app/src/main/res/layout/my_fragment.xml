@@ -3,11 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.MyFragment">
+    tools:context=".business.fragment.MyFragment">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="My" />
+    <Button
+        android:id="@+id/fragment_my_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="波形图" />
+
+
 
 </FrameLayout>

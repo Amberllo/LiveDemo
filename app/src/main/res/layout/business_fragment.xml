@@ -1,13 +1,210 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.BusinessFragment">
+    android:background="#f5f5f5"
+    android:orientation="vertical"
+    tools:context=".business.fragment.BusinessFragment">
+
+
+
+    <!--<Button-->
+    <!--android:id="@+id/btn_downloadCert"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:padding="10dp"-->
+    <!--android:text="下载证书" />-->
+
+    <!--<Button-->
+    <!--android:id="@+id/btn_checkCert"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:padding="10dp"-->
+    <!--android:text="检查证书" />-->
+
+    <!--<android.support.design.widget.TextInputLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_margin="10dp">-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/edt_phone"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:hint="电话号码"-->
+    <!--android:text="15626251248" />-->
+
+    <!--</android.support.design.widget.TextInputLayout>-->
+
+    <!--<android.support.design.widget.TextInputLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_margin="10dp">-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/edt_clientId"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:hint="ClientId"-->
+    <!--android:text="2018081712483569" />-->
+
+    <!--</android.support.design.widget.TextInputLayout>-->
+
+
+    <!--<android.support.design.widget.TextInputLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_margin="10dp">-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/edt_uniqueId"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:hint="uniqueId"-->
+    <!--android:text="37bf632b6e8e4dc2b7d16ad867b08451" />-->
+
+    <!--</android.support.design.widget.TextInputLayout>-->
+
+    <!--<Button-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:padding="10dp"-->
+    <!--android:text="签名" />-->
+
+<!--    <com.amberllo.livedemo.business.widget.WaveView-->
+<!--        android:background="@color/cardview_dark_background"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="100dp" />-->
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="签名" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="签名" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="签名" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="签名" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="签名" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="签名" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="签名" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="签名" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="签名" />
+
+            <EditText
+                android:textColor="#ffffff"
+                android:background="@drawable/shape_gray"
+                android:layout_margin="@dimen/dp_15"
+                android:padding="@dimen/dp_10"
+                android:gravity="top|left"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="签名" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="签名" />
+
+            <EditText
+                android:id="@+id/edittext"
+                android:textColor="#ffffff"
+                android:background="@drawable/shape_gray"
+                android:layout_margin="@dimen/dp_15"
+                android:padding="@dimen/dp_10"
+                android:gravity="top|left"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"/>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="签名" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="签名" />
+
+
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
 
     <TextView
+        android:layout_margin="@dimen/dp_10"
+        android:gravity="center"
+        android:text="发送"
+        android:id="@+id/buttomView"
+        android:background="@color/colorPrimary"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Business" />
+        android:layout_height="@dimen/dp_50"/>
 
-</FrameLayout>
+
+</LinearLayout>

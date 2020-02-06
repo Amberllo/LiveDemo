@@ -4,12 +4,8 @@ import android.arch.lifecycle.Lifecycle
 import android.arch.lifecycle.LifecycleObserver
 import android.arch.lifecycle.OnLifecycleEvent
 
-open abstract class BasePresenter : LifecycleObserver{
-    var mView : IView? = null
-
-    constructor(_view: IView){
-        mView = _view
-    }
+abstract class BasePresenter(_view: IView) : LifecycleObserver{
+    var mView : IView? = _view
 
     @OnLifecycleEvent(value = Lifecycle.Event.ON_PAUSE)
     fun onPause(){}
