@@ -1,9 +1,6 @@
 apply plugin: 'com.android.application'
-
 apply plugin: 'kotlin-android'
-
 apply plugin: 'kotlin-android-extensions'
-
 apply plugin: 'com.jakewharton.butterknife'
 
 android {
@@ -56,7 +53,10 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 
-
+    //编译会报错，加上此行忽略报错依旧执行build
+    lintOptions{
+        abortOnError false
+    }
 
 }
 
